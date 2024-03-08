@@ -1,2 +1,1 @@
-İnitial Commit
-#leventnew
+Initial Commit
