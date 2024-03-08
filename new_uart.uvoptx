@@ -152,14 +152,21 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>15</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
+=======
+          <LineNumber>11</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134219952</Address>
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
+<<<<<<< HEAD
           <BreakIfRCount>0</BreakIfRCount>
           <Filename>.\i2c.h</Filename>
           <ExecCommand></ExecCommand>
@@ -260,6 +267,12 @@
           <Filename>.\delay.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
+=======
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\new_uart\main.c\11</Expression>
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
         </Bp>
       </Breakpoint>
       <Tracepoint>
@@ -268,7 +281,11 @@
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
+<<<<<<< HEAD
         <aLwin>0</aLwin>
+=======
+        <aLwin>1</aLwin>
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
@@ -404,6 +421,7 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+<<<<<<< HEAD
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>8</FileNumber>
@@ -476,6 +494,8 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+=======
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
   </Group>
 
   <Group>

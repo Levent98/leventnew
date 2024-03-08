@@ -22,12 +22,17 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\driver\new_uart\new_uart.uvprojx
+<<<<<<< HEAD
 Project File Date:  03/07/2024
+=======
+Project File Date:  03/04/2024
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
 assembling startup_stm32f407xx.s...
+<<<<<<< HEAD
 i2c.c(1): warning: In file included from...
 ./sysclock.h(27): warning: no newline at end of file [-Wnewline-eof]
 #endif
@@ -153,10 +158,51 @@ delay.c(3): warning: In file included from...
 ./sysclock.h(27): warning: no newline at end of file [-Wnewline-eof]
 #endif
       ^
+=======
+main.c(3): warning: In file included from...
+./sysclock.h(19): warning: no newline at end of file [-Wnewline-eof]
+#define RCC_PLLSOURCE_HSE                RCC_PLLCFGR_PLLSRC_HSE
+                                                               ^
+main.c(7): warning: no previous extern declaration for non-static variable 'data' [-Wmissing-variable-declarations]
+uint8_t data[15]="hello world!";
+        ^
+main.c(7): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t data[15]="hello world!";
+^
+main.c(13): warning: implicit declaration of function 'SystemInitt' [-Wimplicit-function-declaration]
+SystemInitt();
+^
+main.c(16): warning: implicit declaration of function 'HAL_RCC_GetSysClockFreq' [-Wimplicit-function-declaration]
+uint32_t a=HAL_RCC_GetSysClockFreq();
+           ^
+main.c(16): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+uint32_t a=HAL_RCC_GetSysClockFreq();
+         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(25): warning: // comments are not allowed in this language [-Wcomment]
+        //UART3_SendString((uint8_t*)"merhaba nasilsin?");
+        ^
+main.c(38): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(16): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+uint32_t a=HAL_RCC_GetSysClockFreq();
+         ^
+main.c(16): warning: unused variable 'a' [-Wunused-variable]
+main.c(17): warning: unused variable 'b' [-Wunused-variable]
+uint32_t b=USART3->CR1; 
+         ^
+10 warnings generated.
+compiling main.c...
+delay.c(3): warning: In file included from...
+./sysclock.h(19): warning: no newline at end of file [-Wnewline-eof]
+#define RCC_PLLSOURCE_HSE                RCC_PLLCFGR_PLLSRC_HSE
+                                                               ^
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
 delay.c(6): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
 void TimConfig(){
               ^
                void
+<<<<<<< HEAD
 delay.c(42): warning: no newline at end of file [-Wnewline-eof]
 }
  ^
@@ -193,6 +239,55 @@ linking...
 Program Size: Code=2380 RO-data=464 RW-data=4 ZI-data=1632  
 FromELF: creating hex file...
 ".\Objects\new_uart.axf" - 0 Error(s), 41 Warning(s).
+=======
+delay.c(8): warning: // comments are not allowed in this language [-Wcomment]
+//enable timer clock
+^
+delay.c(36): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+for (uint16_t i=0;i<ms;i++){
+     ^
+delay.c(36): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+delay.c(42): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling delay.c...
+compiling system_stm32f4xx.c...
+sysclock.c(3): warning: In file included from...
+./sysclock.h(19): warning: no newline at end of file [-Wnewline-eof]
+#define RCC_PLLSOURCE_HSE                RCC_PLLCFGR_PLLSRC_HSE
+                                                               ^
+sysclock.c(4): warning: // comments are not allowed in this language [-Wcomment]
+#define PLL_M 8  //shift to 0
+                 ^
+sysclock.c(110): warning: variable 'a' set but not used [-Wunused-but-set-variable]
+                uint16_t a;
+                         ^
+sysclock.c(111): warning: variable 'a' is uninitialized when used here [-Wuninitialized]
+                a++;
+                ^
+sysclock.c(110): note: initialize the variable 'a' to silence this warning
+                uint16_t a;
+                          ^
+                           = 0
+4 warnings generated.
+compiling sysclock.c...
+uart.c(7): warning: // comments are not allowed in this language [-Wcomment]
+//Enable Uart clock and Gpio clock
+^
+uart.c(57): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                temp=USART3->DR; //this clears rxne also
+                    ~~~~~~~~~^~
+uart.c(62): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+3 warnings generated.
+compiling uart.c...
+linking...
+Program Size: Code=2024 RO-data=440 RW-data=20 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\new_uart.axf" - 0 Error(s), 23 Warning(s).
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
 
 <h2>Software Packages used:</h2>
 
@@ -219,11 +314,19 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup:2.6.3
       Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f407xx.s
+<<<<<<< HEAD
       Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
       Source file:   MDK/Device/Source/ARM/STM32F40xxx_41xxx_OPT.s
       Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
       Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
 Build Time Elapsed:  00:00:01
+=======
+      Source file:   MDK/Device/Source/ARM/STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:02
+>>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
 </pre>
 </body>
 </html>
