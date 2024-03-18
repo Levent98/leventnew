@@ -5,8 +5,6 @@
 #include "i2c.h"
 #include "adc.h"
 #include "lcd.h"
-#include "EXTI.h"
-
 
 
 
@@ -31,10 +29,10 @@ SystemInitt();
 //lcd_put_cur(1, 0);
 //lcd_send_string("from ESP32");	
 //app_main();
-GPIO_Init();
-InterruptConfig();
+//GPIO_Init();
+//InterruptConfig();
 
-while(1)
+while(true)
 {
 	/*ADC_Start(0);
 	ADC_WaitforConv();
@@ -47,9 +45,9 @@ while(1)
   //UART3_SendString((char*)data);
 	//Delay_ms(1000);
 	//UART3_SendString((uint8_t*)"merhaba nasilsin?");
-
-
-	
+ 
 	
 }
+	
+	
 }

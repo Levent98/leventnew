@@ -3,12 +3,10 @@
 ".\objects\delay.o"
 ".\objects\sysclock.o"
 ".\objects\uart.o"
-<<<<<<< HEAD
 ".\objects\i2c.o"
 ".\objects\adc.o"
 ".\objects\lcd.o"
-=======
->>>>>>> d9e3615ef3d1e673e275f3a92a6b87bda3329436
+".\objects\exti.o"
 ".\objects\startup_stm32f407xx.o"
 ".\objects\system_stm32f4xx.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
